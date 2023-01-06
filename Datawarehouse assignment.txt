@@ -1,0 +1,76 @@
+Scenario I In this scenario, we are interested in modeling student enrollment in Stanford courses. We would like to
+answer questions such as:
+
+Q.1What are the strengths and weaknesses of each option?
+
+Ans-optionA-Strengths-It is more suitable for query processing and it can be easily analyses large multidimensional data sets.
+
+            Weakness-More information is not available or extracted.
+  
+    optionB-Strengths-It is more suitable for extracting more information and it can be easily analyses large multidimensional data sets.
+
+            Weakness-complex queries & takes longer time to execute.
+
+    optionC-Strengths-It is more suitable for extracting Specific information and it can be easily analyses large multidimensional data sets.
+
+            Weakness-complex queries & takes longer time to execute.
+
+
+Q.2 Which option would you choose and why?
+
+Ans-Option A would fit better as it is a star schema data model where the query execution takes less time & no complexity.
+    Dimension & Fact tables are up to required level & easy to design
+
+Q3. Would your answer to Question 2 be different if the majority of classes had multiple instructors? How
+about if only one or two classes had multiple instructors? (Explain your answer.)
+
+Ans- Complexity of design would be decreased if only one or two classes had multiple instructors.Query execution would be faster.
+      
+
+
+
+Scenario II In this scenario, we are building a data warehouse for an online brokerage company. The company
+makes money by charging commissions when customers buy and sell stocks. We are planning to have a Trades fact
+table with the grain of one row per stock trade. We will use the following dimensions: Date, Customer, Account,
+Security (i.e. which stock was traded), and TradeType.
+
+
+
+Q.5 What are the strengths and weaknesses of each option?
+
+Ans-optionA-Strengths-Query Execution would be faster.simple design with less tables.
+            
+            Weakness- overwritten would lead to loss of information in future analysis
+
+
+  
+    optionB-Strengths-Query Execution would be faster.simple design with less tables.
+            
+            Weakness-Duplication might occur if in case scores are not changed.
+
+
+    optionC-Strengths-It is more suitable for query processing and it can be easily analyses large multidimensional data sets.
+
+            Weakness-complexity of queries will increase.
+
+    optionD-Strengths-It is more suitable for extracting Specific information and it can be easily analyses large multidimensional data sets.
+
+            Weakness-complex queries & takes longer time to execute.
+
+Q.6 Which option would you choose and why?
+
+Ans-Option C would fit better as it is a star schema data model where the query execution takes less time & no complexity.
+    Dimension & Fact tables are up to required level & easy to design.
+
+Q.7 Would your answer to Question 6 be different if the number of customers and/or the time interval
+between score recalculations was much larger or much smaller? (Explain your answer.)
+
+Ans-Query execution time & speed would be moderated.Design of such datamodel or schema design would be easy if the number of customers and/or the time interval
+between score recalculations was much smaller.
+
+
+
+      
+
+
+
